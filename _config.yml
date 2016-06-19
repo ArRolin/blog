@@ -8,13 +8,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-  videos:
-    title: Videos
-    output: true
-    List Field:
-    - 
-    Object Field:
-      Key: 
 defaults:
 - scope:
     path: ''
