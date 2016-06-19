@@ -1,7 +1,7 @@
 ---
 title: '404'
 date: 2016-06-19 19:42:00 +06:00
-permalink: '404'
+permalink: 404.html
 ---
 
 Error Page
