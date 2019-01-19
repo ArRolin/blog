@@ -2,8 +2,8 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "ArRolin Blog",
     "description": "",
-    "home_page_url": "https://arrolin.gitlab.com/blog",
-    "feed_url": "https://arrolin.gitlab.com/blog/feed.json",
+    "home_page_url": "https://blog.arrol.in",
+    "feed_url": "https://blog.arrol.in/feed.json",
     "user_comment": "",
     "author": {
         "name": "ArRolin"
