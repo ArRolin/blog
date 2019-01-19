@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Author: ArRolin - ArRolin Blog</title><meta name="robots" content="noindex, follow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="amphtml" href="https://blog.arrol.in/amp/authors/arrolin/"><link type="application/atom+xml" rel="alternate" href="https://blog.arrol.in/feed.xml"><meta property="og:title" content="ArRolin"><meta property="og:site_name" content="My blog - ArRolin Blog"><meta property="og:description" content=""><meta property="og:url" content="https://blog.arrol.in/authors/arrolin/"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@ArRolin"><meta name="twitter:title" content="ArRolin"><meta name="twitter:description" content=""><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css?family= PT+Serif:400,700|Muli:400,600" rel="stylesheet"><link rel="stylesheet" href="https://blog.arrol.in/assets/css/style.css?v=5fb3bcc6be9f65389298b4b4f8abe57a"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"ArRolin Blog","url":"https://blog.arrol.in"}</script><script async src="https://blog.arrol.in/assets/js/lazysizes.min.js?v=dc4b666bb3324aea4ead22e26059c761"></script><style>.top__search [type=search] {
+						background-image: url(https://blog.arrol.in/assets/svg/search.svg);
+				    }</style></head><body><div class="container"><header class="js-top is-sticky"><a class="logo" href="https://blog.arrol.in">ArRolin Blog</a><div class="top"><nav class="navbar js-navbar"><button class="navbar__toggle js-navbar__toggle" aria-expanded="false">Menu</button><ul class="navbar__menu"></ul></nav><div class="top__search"><form action="https://blog.arrol.in/search.html" class="search"><input type="search" name="q" placeholder="search..."></form></div></div></header><main><section class="hero hero--author"><header class="hero--author__wrap"><div><h1 class="hero__title hero--author__title">ArRolin <sup>(1)</sup></h1></div></header></section><div class="category category--normal"><article><figure class="category__image"><a href="https://blog.arrol.in/jus-test-post/"><img class="lazyload" src="" data-srcset="" data-sizes="auto" data-expand="300" height="" width="" alt=""></a></figure><header class="category__header"><p><time datetime="2019-01-19T15:01">19 January 2019</time></p><h2><a href="https://blog.arrol.in/jus-test-post/">Jus Test Post</a></h2></header><p class="category__entry">loremasdasdasdasdas</p><a href="https://blog.arrol.in/jus-test-post/" class="category__btn">View more</a></article></div></main><footer class="footer"><div class="footer__copyright">Powered by LOL</div></footer></div><script defer="defer" src="https://blog.arrol.in/assets/js/jquery-3.2.1.slim.min.js?v=f307ecc7f6353949f03c06ffa70652a2"></script><script defer="defer" src="https://blog.arrol.in/assets/js/scripts.min.js?v=5977caa3bd6c30eab5c559ded3288d58"></script><div class="cookie-popup js-cookie-popup cookie-popup--uses-badge"><h2>This website uses cookies</h2><p>Select which cookies to opt-in to via the checkboxes below; our website uses cookies to examine site traffic and user activity while on our site, for marketing, and to provide social media functionality. <a href="#not-specified">More details...</a></p><form><input id="gdpr-necessary" name="gdpr-necessary" checked="checked" disabled="disabled" type="checkbox"> <label for="gdpr-necessary">Required</label> <input id="gdpr-functions" name="gdpr-functions" type="checkbox"> <label for="gdpr-functions">Functionality</label> <input id="gdpr-analytics" name="gdpr-analytics" type="checkbox"> <label for="gdpr-analytics">Analytical</label> <input id="gdpr-marketing" name="gdpr-marketing" type="checkbox"> <label for="gdpr-marketing">Marketing</label><p class="cookie-popup__save-wrapper"><button type="submit" class="cookie-popup__save">Save</button></p></form><span class="cookie-popup-label">Cookie Policy</span></div><script>(function() {
+                            function addScript (src, inline) {
+                                var newScript = document.createElement('script');
+            
+                                if (src) {
+                                    newScript.setAttribute('src', src);
+                                }
+            
+                                if (inline) {
+                                    newScript.text = inline;
+                                }
+            
+                                document.body.appendChild(newScript);
+                            }
+            
+                            var popup = document.querySelector('.js-cookie-popup');
+                            var checkboxes = popup.querySelectorAll('input[type="checkbox"]');
+                            var save = popup.querySelector('button');
+                            var currentConfig = localStorage.getItem('publii-gdpr-allowed-cookies');
+                            var blockedScripts = document.querySelectorAll('script[type^="gdpr-blocker/"]');
+                            
+            
+                            popup.addEventListener('click', function() {
+                                if (!popup.classList.contains('cookie-popup--is-sticky')) {
+                                    popup.classList.add('cookie-popup--is-sticky');
+                                }
+                            });
+            
+                            save.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                popup.classList.remove('cookie-popup--is-sticky');
+                                var allowedGroups = [];
+            
+                                for (var i = 0; i < checkboxes.length; i++) {
+                                    if (checkboxes[i].checked) {
+                                        var groupName = checkboxes[i].getAttribute('name').replace('gdpr-', '');
+                                        var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + groupName + '"]');
+            
+                                        for (var j = 0; j < scripts.length; j++) {
+                                            addScript(scripts[j].src, scripts[j].text);
+                                        }
+            
+                                        allowedGroups.push(groupName);
+                                    }
+                                }
+            
+                                localStorage.setItem('publii-gdpr-allowed-cookies', allowedGroups.join(','));
+                                popup.classList.remove('cookie-popup--is-sticky');
+            
+                                setTimeout(function () {
+                                    if (currentConfig !== null) {
+                                        window.location.reload();
+                                    }
+                                }, 250);
+                            });
+            
+                            if (currentConfig === null) {
+                                popup.classList.add('cookie-popup--is-sticky');
+                            } else {
+                                if (currentConfig !== '') {
+                                    var allowedGroups = currentConfig.split(',');
+            
+                                    for (var i = 0; i < allowedGroups.length; i++) {
+                                        var scripts = document.querySelectorAll('script[type="gdpr-blocker/' + allowedGroups[i] + '"]');
+                                        var checkbox = popup.querySelector('input[type="checkbox"][name="gdpr-' + allowedGroups[i] + '"]');
+            
+                                        if (checkbox) {
+                                            checkbox.checked = true;
+                                        }
+            
+                                        for (var j = 0; j < scripts.length; j++) {
+                                            addScript(scripts[j].src, scripts[j].text);
+                                        }
+                                    }
+                                }
+                            }
+                        })();</script></body></html>
